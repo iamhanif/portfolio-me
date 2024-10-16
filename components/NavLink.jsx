@@ -32,8 +32,8 @@ const NavLink = () => {
             id={link.id} // Assigning a unique id to each link
             className={`flex gap-2 text-2xl font-medium transition-colors duration-300 ${
               isActive
-                ? "text-lime-500 dark:text-lime-400"
-                : "text-gray-700 hover:text-lime-400 hover:underline  dark:text-white dark:hover:text-lime-400"
+                ? "text-sky-500 dark:text-sky-400"
+                : "text-gray-700 hover:text-sky-400 hover:underline  dark:text-white dark:hover:text-sky-400"
             }`}
           >
             <h2 className="text-2xl py-2 hidden sm:block">{Label}</h2>

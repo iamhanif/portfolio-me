@@ -1,5 +1,5 @@
 "use client";
-import proPic from "@/images/hanif.png";
+import proPic from "@/public/images/hanif.png";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -32,7 +32,7 @@ const HeroSection = () => {
   return (
     <div
       id="about"
-      className="relative h-dvh w-full p-6 md:p-12 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-all duration-500"
+      className="relative h-[80vh] w-full p-6 md:p-12 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-all duration-500"
     >
       <div className="flex max-w-7xl h-full mx-auto flex-col md:flex-row items-center justify-center p-6 md:p-12">
         <div className="w-full md:w-1/2 text-center space-y-6">

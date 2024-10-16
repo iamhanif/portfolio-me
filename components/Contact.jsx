@@ -26,7 +26,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="h-screen w-full bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100  flex items-center justify-center"
+      className="h-[70vh] w-full my-32 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100  flex items-center justify-center"
     >
       <div className="max-w-md mx-auto px-6 bg-transparent">
         <motion.h2

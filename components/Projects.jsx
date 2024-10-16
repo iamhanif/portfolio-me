@@ -107,7 +107,7 @@ const Projects = () => {
                 {project.link && (
                   <Link
                     href={project.link}
-                    className="text-lime-700 hover:text-lime-800 w-auto flex items-center"
+                    className="text-sky-700 hover:text-sky-800 w-auto flex items-center"
                     target="_blank"
                   >
                     <FaExternalLinkAlt className=" h-8 w-8" />
