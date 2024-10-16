@@ -2,7 +2,7 @@ import Contact from "@/components/Contact";
 
 const page = () => {
   return (
-    <div>
+    <div className="dark:bg-gray-900 h-screen overflow-hidden">
       <Contact />
     </div>
   );

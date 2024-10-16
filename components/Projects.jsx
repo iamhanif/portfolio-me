@@ -28,7 +28,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="bg-white w-full dark:bg-gray-900 min-h-screen m-10 p-24">
+    <section className="bg-white w-full dark:bg-gray-900 min-h-screen py-24">
       {/* Page Title */}
       <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 dark:text-teal-400 mb-12">
         Project Showcase
@@ -74,8 +74,8 @@ const Projects = () => {
                 <Image
                   src={project.image}
                   alt={project.name}
-                  width={200}
-                  height={200}
+                  width={500}
+                  height={500}
                   className="w-full sm:w-4/5 md:w-full mx-auto rounded-lg dark:border-sky-400 h-4/5 object-cover transition-opacity duration-300 hover:opacity-75"
                 />
 

@@ -94,7 +94,7 @@ const SkillsSection = () => {
   return (
     <section
       id="skills"
-      className="bg-white h-[70vh] w-full my-24 dark:bg-gray-900 text-gray-800 dark:text-white flex items-center justify-center"
+      className="bg-white h-[60vh] w-full my-24 dark:bg-gray-900 text-gray-800 dark:text-white flex items-center justify-center"
     >
       <div className="h-full w-full flex flex-col items-center justify-center mx-auto px-6">
         <h2 className="text-4xl text-gray-800 dark:text-teal-400 font-bold text-center mb-8">

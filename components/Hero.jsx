@@ -2,6 +2,7 @@
 import proPic from "@/public/images/hanif.png";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
@@ -96,10 +97,19 @@ const HeroSection = () => {
             ...a passionate developer with a love for creating beautiful,
             functional web applications. Let's build something amazing together.
           </motion.p>
-
-          <button className="border border-black rounded-3xl px-4 py-2 font-bold text-xl">
-            Download Resume
-          </button>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={paragraphVariants}
+            className="text-lg md:text-xl leading-relaxed text-gray-700 dark:text-gray-300"
+          >
+            <Link
+              href="https://drive.google.com/file/d/1LqToiM7JXQPjF1ZuYuQ_CleqYbyHPsN6/view?usp=sharing"
+              className="border dark:border-white border-black rounded-3xl px-8 py-2 font-bold text-xl"
+            >
+              Resume
+            </Link>
+          </motion.div>
         </div>
 
         <motion.div

@@ -2,7 +2,7 @@ import Projects from "@/components/Projects";
 
 const page = () => {
   return (
-    <div>
+    <div className="dark:text-white">
       <Projects />
     </div>
   );

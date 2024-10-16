@@ -26,13 +26,13 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="h-[70vh] w-full my-32 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100  flex items-center justify-center"
+      className="h-[70vh] w-full my-16 py-32 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100  flex items-center justify-center"
     >
       <div className="max-w-md mx-auto px-6 bg-transparent">
         <motion.h2
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { duration: 0.5 } }}
-          className="text-3xl font-bold  text-gray-800 dark:text-teal-400 text-center mb-4"
+          className="text-3xl font-bold  text-gray-800 dark:text-teal-400 text-center pt-8 mb-4"
         >
           Contact Us
         </motion.h2>

@@ -30,7 +30,7 @@ const projects = [
     id: 2,
     name: "Weather App",
     title: "weather-App",
-    image: "/images/weather.png",
+    image: "/images/weather.avif",
     video: "",
     description:
       "☀️🌧️ Check out my weather app built with React! It provides real-time weather updates for any location, featuring a clean and user-friendly interface. Stay informed about the weather with this simple yet effective app!",

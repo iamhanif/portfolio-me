@@ -47,7 +47,7 @@ const CaseStudy = () => {
   }
 
   return (
-    <section className="bg-white scroll-smooth dark:bg-gray-900 min-h-screen">
+    <section className="bg-white scroll-smooth mt-[-32px] dark:bg-gray-900 min-h-screen">
       <div className="flex max-w-7xl scroll-smooth mx-auto flex-col md:flex-row bg-white px-8 py-16 mt-20 gap-5 dark:bg-gray-900">
         {/* Main Content: Project Details */}
         <div className="w-full md:w-4/6 px-4">
