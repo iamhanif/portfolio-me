@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import {
   FaBootstrap,
   FaCss3Alt,
+  FaGithub,
   FaHtml5,
   FaJs,
   FaNodeJs,
@@ -13,10 +14,10 @@ import {
   SiFigma,
   SiFirebase,
   SiFramer,
+  SiMongodb,
   SiNextdotjs,
+  SiOpenai,
   SiTailwindcss,
-  SiTypescript,
-  SiVite,
 } from "react-icons/si";
 
 const SkillsSection = () => {
@@ -38,10 +39,7 @@ const SkillsSection = () => {
         icon: <FaJs size={40} className="text-yellow-500" />,
       },
       { name: "React", icon: <FaReact size={40} className="text-blue-500" /> },
-      {
-        name: "Next.js",
-        icon: <SiNextdotjs size={40} className="text-black dark:text-white" />,
-      },
+
       {
         name: "Tailwind CSS",
         icon: <SiTailwindcss size={40} className="text-sky-500" />,
@@ -49,16 +47,24 @@ const SkillsSection = () => {
     ],
     good: [
       {
-        name: "TypeScript",
-        icon: <SiTypescript size={40} className="text-blue-600" />,
+        name: "Next.js",
+        icon: <SiNextdotjs size={40} className="text-black dark:text-white" />,
+      },
+      {
+        name: "Github",
+        icon: <FaGithub size={40} className="text-info" />,
+      },
+      {
+        name: "Express",
+        icon: <SiExpress size={40} className="text-green-600" />,
       },
       {
         name: "Bootstrap",
         icon: <FaBootstrap size={40} className="text-info" />,
       },
       {
-        name: "Express",
-        icon: <SiExpress size={40} className="text-green-600" />,
+        name: "ChatGPT",
+        icon: <SiOpenai size={40} className="text-info" />,
       },
     ],
     familiar: [
@@ -74,7 +80,10 @@ const SkillsSection = () => {
         name: "Figma",
         icon: <SiFigma size={40} className="text-black dark:text-white" />,
       },
-      { name: "Vite", icon: <SiVite size={40} className="text-orange-600" /> },
+      {
+        name: "MongoDB",
+        icon: <SiMongodb size={40} className="text-green-700" />,
+      },
       {
         name: "Framer-motion",
         icon: <SiFramer size={40} className="text-black dark:text-white" />,
@@ -107,7 +116,10 @@ const SkillsSection = () => {
                 animate="visible"
                 custom={index}
               >
-                <span className="mr-2">{skill.icon}</span>
+                <span className="sm:hidden">{skill.icon}</span>
+                <span className="hidden sm:block text-lg font-medium">
+                  {skill.name}
+                </span>
               </motion.div>
             ))}
           </div>
@@ -128,7 +140,10 @@ const SkillsSection = () => {
                 animate="visible"
                 custom={index}
               >
-                <span className="mr-2">{skill.icon}</span>
+                <span className="sm:hidden">{skill.icon}</span>
+                <span className="hidden sm:block text-lg font-medium">
+                  {skill.name}
+                </span>
               </motion.div>
             ))}
           </div>
@@ -149,7 +164,10 @@ const SkillsSection = () => {
                 animate="visible"
                 custom={index}
               >
-                <span className="mr-2">{skill.icon}</span>
+                <span className="sm:hidden">{skill.icon}</span>
+                <span className="hidden sm:block text-lg font-medium">
+                  {skill.name}
+                </span>
               </motion.div>
             ))}
           </div>

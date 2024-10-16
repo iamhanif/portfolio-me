@@ -82,9 +82,11 @@ const HeroSection = () => {
               <SiLeetcode />
             </a>
           </motion.p>
-          <button className="border border-black rounded-3xl px-4 py-2 font-bold text-xl">
+
+          {/* <a href="/assets/resume.pdf" download="resume.pdf">
             Download Resume
-          </button>
+          </a> */}
+
           <motion.p
             initial="hidden"
             animate="visible"
@@ -94,6 +96,10 @@ const HeroSection = () => {
             ...a passionate developer with a love for creating beautiful,
             functional web applications. Let's build something amazing together.
           </motion.p>
+
+          <button className="border border-black rounded-3xl px-4 py-2 font-bold text-xl">
+            Download Resume
+          </button>
         </div>
 
         <motion.div
