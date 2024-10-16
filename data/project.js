@@ -92,7 +92,7 @@ const projects = [
     technologies: ["Next.js", "Tailwind", "Framer motion"],
     tags: ["Next.js"],
     features: [""],
-    link: "",
+    link: "https://hanif-portfolio-me.vercel.app/",
     category: "next.js",
     github: "https://github.com/iamhanif/portfolio-me",
   },
