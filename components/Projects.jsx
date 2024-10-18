@@ -86,7 +86,7 @@ const Projects = () => {
                 </div>
               </Link>
               <h1 className="font-bold text-3xl text-center mt-2 lg:mt-5 ">
-                {project.title}
+                {project.name}
               </h1>
               <motion.div
                 initial={{ y: 20, opacity: 0 }}

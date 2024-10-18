@@ -1,5 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
+import { SiGmail, SiLinkedin, SiWhatsapp } from "react-icons/si";
+import { IoLocationSharp } from "react-icons/io5";
 
 const Contact = () => {
   const fields = [
@@ -26,71 +28,50 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="h-[70vh] w-full my-16 py-32 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100  flex items-center justify-center"
+      className="h-[40vh] w-full md:my-16 md:py-32 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 flex items-center justify-center"
     >
       <div className="max-w-md mx-auto px-6 bg-transparent">
-        <motion.h2
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { duration: 0.5 } }}
-          className="text-3xl font-bold  text-gray-800 dark:text-teal-400 text-center pt-8 mb-4"
-        >
-          Contact Us
-        </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { duration: 0.5, delay: 0.2 } }}
-          className="text-gray-900 dark:text-gray-100 text-center mb-6"
+          className="text-gray-900 dark:text-gray-100 text-center pt-8"
         >
-          We’d love to hear from you! Please fill out the form below.
+          Get in Touch
         </motion.p>
-        <motion.form
-          initial="hidden"
-          animate="visible"
-          variants={containerVariants}
-          className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md"
+        <motion.h2
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { duration: 0.5 } }}
+          className="text-3xl font-bold  text-gray-800 dark:text-neutral-50 text-center mb-4"
         >
-          {fields.map((field) => (
-            <motion.div key={field.id} variants={itemVariants} className="mb-4">
-              <label
-                htmlFor={field.id}
-                className="block text-gray-500 dark:text-gray-200 mb-1"
-              >
-                {field.label}
-              </label>
-              {field.isTextarea ? (
-                <textarea
-                  id={field.id}
-                  name={field.id}
-                  required
-                  rows="4"
-                  className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-md bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition duration-300 focus:outline-none"
-                ></textarea>
-              ) : (
-                <input
-                  type={
-                    field.id === "email"
-                      ? "email"
-                      : field.id === "phone"
-                      ? "tel"
-                      : "text"
-                  }
-                  id={field.id}
-                  name={field.id}
-                  required
-                  className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-md bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition duration-300 focus:outline-none "
-                />
-              )}
-            </motion.div>
-          ))}
-          <motion.button
-            whileHover={{ scale: 1.05, backgroundColor: "#2c7a7f" }}
-            whileTap={{ scale: 0.99 }}
-            type="submit"
-            className="w-full bg-teal-600 text-white p-2 rounded-md hover:bg-teal-500 transition duration-300"
-          >
-            Send Message
-          </motion.button>
-        </motion.form>
+          Contact Us
+        </motion.h2>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { duration: 0.5, delay: 0.2 } }}
+          className="text-gray-900 dark:text-gray-100 text-center pt-8"
+        >
+          <div className="text-xl text-gray-900 dark:text-gray-100 flex items-center justify-between gap-8 py-1">
+            <SiGmail /> <p>iamhanif101@gmail.com</p>
+          </div>
+          <div className="text-xl text-gray-900 dark:text-gray-100 flex items-center justify-between gap-8 py-1">
+            <SiWhatsapp /> <p>+88 01607 150 462</p>
+          </div>
+          <div className="text-xl text-gray-900 dark:text-gray-100 flex items-center justify-between gap-8 py-1">
+            <SiLinkedin />{" "}
+            <a
+              href="www.linkedin.com/in/iamhanif"
+              target="_blank"
+              className="hover:bg-neutral-50 dark:hover:bg-gray-800 px-4 rounded-md"
+            >
+              www.linkedin.com
+            </a>
+          </div>
+          <div className="text-xl text-gray-900 dark:text-gray-100 flex items-center justify-between gap-8 py-1">
+            <IoLocationSharp className="text-2xl" />
+            <p>Dhaka, Bangladesh</p>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

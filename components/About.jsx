@@ -1,32 +1,43 @@
+"use client";
+import { motion } from "framer-motion";
+import { MdCastForEducation } from "react-icons/md";
+
 function About() {
+  const aboutVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: (i) => ({
+      opacity: 1,
+      scale: 1,
+      transition: { delay: i * 0.1, duration: 0.5, ease: "easeOut" },
+    }),
+  };
+
+  const imageVariants = {
+    hidden: { scale: 0.8, opacity: 0 },
+    visible: {
+      scale: 1,
+      opacity: 1,
+      transition: { duration: 0.8, delay: 0.5 },
+    },
+  };
+
   return (
-    <div className="max-w-7xl mx-auto my-2">
-      <h1>About Me</h1>
-
-      <p>Working on it</p>
-      {/* <p>
-        I am a detail-oriented and self-driven programmer with a proven track
-        record of developing user-facing applications. Proficient in HTML, CSS,
-        JavaScript and React.js with familiarity in Next.js, I specialize in
-        crafting intuitive and dynamic web experiences. Recognized as a
-        collaborative team player with a strong analytical mindset. With a keen
-        attention to detail, I ensure the delivery of high-quality solutions and
-        continuously strive to enhance user experience through proactive
-        contributions to UX improvement projects and commitment to codebase
-        improvement initiatives.
-      </p>
-
-      <h3>Why Me ? </h3>
-      <p>
-        {" "}
-        - Sound ability to build efficient frontend user interfaces in line with
-        modern best practices <br />
-        - Flexible enough to work in any professional position & under pressure.{" "}
-        <br />
-        - Ensured code quality & proper documentation for the project. <br />-
-        Ability to read doc and find solution from them
-      </p> */}
-    </div>
+    <section
+      id="about"
+      className="bg-white h-[60vh] lg:h-[40vh] max-w-7xl mx-auto w-full  dark:bg-gray-900 text-gray-800 dark:text-white flex items-center justify-center"
+    >
+      <motion.div
+        className="text-gray-700 dark:text-gray-300 border dark:border-teal-400 rounded-xl flex flex-col items-center px-12 sm:px-16 md:px-24 py-8 my-8 pb-10 gap-y-4"
+        variants={aboutVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        <MdCastForEducation className="text-4xl" />
+        <h1 className="text-xl font-semibold">Education</h1>
+        <h2 className="text-lg font-medium">Masters in EEE (AIUB)</h2>
+        <h2 className="text-lg font-medium">B.Sc. in EEE (UAP)</h2>
+      </motion.div>
+    </section>
   );
 }
 

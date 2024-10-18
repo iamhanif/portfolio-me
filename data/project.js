@@ -85,8 +85,8 @@ const projects = [
   },
   {
     id: 5,
-    name: "This Portfolio",
-    title: "this-Portfolio",
+    name: "My Portfolio",
+    title: "my-Portfolio",
     image: "/images/portfolio.jpg",
     description: "",
     technologies: ["Next.js", "Tailwind", "Framer motion"],
