@@ -1,7 +1,9 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation"; // To get the current path
-import { FaEnvelope, FaProjectDiagram, FaTools } from "react-icons/fa"; // Importing icons
+import { FaEnvelope, FaProjectDiagram, FaTools } from "react-icons/fa";
+import { MdOutlineContactMail } from "react-icons/md";
+import { GrTools, GrProjects } from "react-icons/gr"; // Importing icons
 import { SiAboutdotme } from "react-icons/si";
 
 const NavLink = () => {
@@ -9,14 +11,19 @@ const NavLink = () => {
 
   const navLinks = [
     { href: "/about", label: "About", icon: SiAboutdotme, id: "about" },
-    { href: "/skills", label: "Skills", icon: FaTools, id: "skills" },
+    { href: "/skills", label: "Skills", icon: GrTools, id: "skills" },
     {
       href: "/project",
       label: "Projects",
-      icon: FaProjectDiagram,
+      icon: GrProjects,
       id: "projects",
     },
-    { href: "/contact", label: "Contact", icon: FaEnvelope, id: "contact" },
+    {
+      href: "/contact",
+      label: "Contact",
+      icon: MdOutlineContactMail,
+      id: "contact",
+    },
   ];
 
   return (

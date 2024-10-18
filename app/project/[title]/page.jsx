@@ -59,7 +59,7 @@ const CaseStudy = () => {
             Back to Projects
           </Link>
           <h2 className="text-lg md:text-4xl font-semibold text-center text-gray-800 dark:text-sky-400 mb-8">
-            Case Study of {project.name}
+            Details about {project.name}
           </h2>
 
           <motion.div

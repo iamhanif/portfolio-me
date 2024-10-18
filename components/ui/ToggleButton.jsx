@@ -23,7 +23,11 @@ export default function ToggleButton() {
   return (
     <div className=" flex items-center justify-center ">
       <button onClick={toggleDarkMode} className="p-2 h-12 w-auto rounded-full">
-        {isDarkMode ? <LuSun size="lg" /> : <GiMoon size="lg" />}
+        {isDarkMode ? (
+          <LuSun size="lg" className="text-white" />
+        ) : (
+          <GiMoon size="lg" />
+        )}
       </button>
     </div>
   );

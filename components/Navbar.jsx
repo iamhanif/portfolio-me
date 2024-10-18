@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="top-0 fixed z-10 mx-auto bg-neutral-50 text-gray-800 dark:text-teal-400 dark:bg-gray-900 w-full justify-around gap-5 px-6 py-4 shadow-lg flex flex-row items-center">
       <div className="flex items-center gap-5">
         <Link href="/">
-          <FaHome size={30} color="#0369a1" />
+          <FaHome size={30} className="text-sky-600 dark:text-white" />
           {/* <Image
             alt="logo"
             height={100}
