@@ -62,7 +62,7 @@ const Contact = () => {
             <a
               href="www.linkedin.com/in/iamhanif"
               target="_blank"
-              className="hover:bg-neutral-50 dark:hover:bg-gray-800 px-4 rounded-md"
+              className="hover:bg-neutral-50 dark:hover:bg-gray-800 rounded-md"
             >
               www.linkedin.com
             </a>

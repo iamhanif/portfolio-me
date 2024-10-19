@@ -24,9 +24,9 @@ const page = () => {
   return (
     <section
       id="about"
-      className="bg-white h-fit md:h-dvh mx-auto w-full md:py-36 dark:bg-gray-900 text-gray-800 dark:text-white flex items-center justify-center"
+      className="bg-white h-fit sm:h-[100vh] overflow-y-auto mx-auto w-full  dark:bg-gray-900 text-gray-800 dark:text-white flex items-center justify-center"
     >
-      <div className="h-fit w-full flex flex-col items-center justify-center mx-auto md:px-6 px-1 pt-12">
+      <div className="h-fit w-full flex flex-col items-center justify-center mx-auto md:px-6 px-1 pt-12 md:pt-60 lg:pt-28">
         <h2 className="text-4xl text-gray-800 dark:text-teal-400 font-bold text-center my-8 pt-8">
           About Me
         </h2>
@@ -44,7 +44,7 @@ const page = () => {
         </motion.div>
 
         <motion.p
-          className="text-gray-700 dark:text-gray-300 w-full text-base md:text-lg leading-normal text-justify flex items-center px-4 pb-8 md:m-2"
+          className="text-gray-700 dark:text-gray-300 md:w-4/5 lg:w-2/3 w-full text-base md:text-lg leading-normal text-justify flex items-center px-4 pb-8 md:m-2"
           variants={aboutVariants}
           initial="hidden"
           animate="visible"

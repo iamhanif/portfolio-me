@@ -66,7 +66,7 @@ const Projects = () => {
       <div className="max-w-7xl  mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4 rounded-lg">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project) => (
-            <div key={project.id} className="h-[66vh]  rounded-lg pb-4 ">
+            <div key={project.id} className="h-[66vh] rounded-lg pb-4 ">
               <Link
                 href={`/project/${project.title}`}
                 className="relative group overflow-hidden shadow-lg cursor-pointer"
